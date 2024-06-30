@@ -1,0 +1,269 @@
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: Hanken Grotesk;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+.card {
+    display: flex;
+    background: white;
+    width: 50%;
+    box-shadow: 10px 10px 10px hsl(221, 100%, 96%);
+    border-radius: 30px;
+    align-self: center;
+    
+    
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    padding: .8rem 3rem 2rem;
+    text-align: center;
+    text-wrap: wrap;
+    width: 50%;
+    color: hsl(241, 100%, 89%);
+    justify-content: center;
+       
+}
+
+.result-card > p {
+    font-size: .9rem;
+    
+}
+
+#result {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#result-number {
+   font-size: 2.5rem;
+   font-weight: 800;
+   color: white;
+   align-self: center;
+   
+}
+
+
+
+.result-circle {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 9rem;
+    width: 9rem;
+    align-self: center;
+    
+    margin-top: 1rem;
+}
+
+#result-circle-p {
+    color: hsl(241, 100%, 89%);
+    font-size: .75rem;
+    position: relative;
+    bottom: 4rem;   
+}
+
+#great {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    
+}
+
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem;
+    width: 50%;
+    
+}
+
+.summary-card > h2 {
+    align-self: flex-start;
+}
+.summary-card-item {
+    display: flex;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.summary-card-item > p, .item-container > p {
+    font-size: .8rem;
+}
+
+#score {
+    height: fit-content;
+    justify-self: center;
+    color:   hsla(224, 30%, 27%, .6);
+    font-weight: 500;
+}
+
+#score > span {
+    font-weight: 800;
+}
+
+.item-container {
+    display: flex;
+    
+}
+
+.item-container > p {
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.btn {
+    background: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: 1.3rem;
+}
+
+.btn:hover {
+    background: hsl(241, 81%, 54%);
+    transition: .3s ease-in;
+}
+
+#reaction {
+    background: hsla(0, 100%, 67%, .1);
+}
+
+#reaction-p {
+    color: hsla(0, 100%, 67%);
+}
+
+#memory {
+    background: hsla(39, 100%, 56%, .1);
+}
+
+#memory-p {
+    color: hsla(39, 100%, 56%);
+}
+#verbal {
+    background: hsla(166, 100%, 37%, .1);
+}
+
+#verbal-p {
+    color: hsla(166, 100%, 37%);
+}
+
+#visual {
+    background: hsla(234, 85%, 45%, .1);
+}
+#visual-p {
+    color: hsla(234, 85%, 45%);
+}
+
+@media all and (max-width: 857px) {
+    body {
+        height: 100vh;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+
+    .result-card {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .result-card > p {
+        font-size: 1.3rem;
+    }
+
+    .result-circle {
+        height: 7.4rem;
+        width: 7.4rem;
+
+    }
+
+    #result-number {
+        font-size: 3rem;
+    }
+
+    #result-circle-p {
+        bottom: 2.6rem;
+    }
+
+    #result{
+        font-size: 1.2rem;
+        
+    }
+
+    .summary-card {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .summary-card > h2 {
+        font-size: 1.5rem;
+    }
+
+    .summary-card-item {
+        padding: 3px 10px;
+    }
+
+    .summary-card-item > p, .item-container > p {
+        font-size: 1.3rem;
+    }
+    #great {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
